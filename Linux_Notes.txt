@@ -1,0 +1,311 @@
+    1  cmd
+    2  exit
+    3  cd
+    4  notepad .bash_profile
+    5  source ~/. bash_profile
+    6  sub1
+    7  cd
+    8  notepad .bash_profile
+    9  
+   10  
+   11  source ~/.bash_profile
+   12  sub1
+   13  cd
+   14  notepad .bash_profile
+   15  subl
+   16  whoami
+   17  echo "hello"
+   18  stop this session
+   19  pwd
+   20  ls 
+   21  ls -F
+   22  man ls
+   23  ls --l
+   24  ls --help
+   25  q
+   26  ls -a
+   27  ls -F Des
+   28  ls -F Desktop/
+   29  ls -F SWC_spring2019
+   30  ls -F Desktop/
+   31  ls -F SWC_spring2019
+   32  ls -F Desktop/SWC_spring2019
+   33  cd Desktop/
+   34  pwd
+   35  cd SWC_spring2019/
+   36  cd
+   37  ls -F
+   38  cd Desktop
+   39  cd SWC_spring2019/
+   40  ls -F
+   41  cd
+   42  pwd
+   43  cd Desktop/SWC_spring2019/
+   44  pwd
+   45  cd Desktop
+   46  cd . .
+   47  cd ..
+   48  cd . .
+   49  cd ..
+   50  ls -F -a
+   51  pwd
+   52  cd Desktop/
+   53  cd
+   54  cd /Users/Jonathan/Desktop/
+   55  cd ~
+   56  pwd
+   57  cd -
+   58  cd Desktop/SWC_spring2019/Data/
+   59  cd Desktop/SWC_spring2019/
+   60  pwd
+   61  cd Data
+   62  cd ByCountry
+   63  ls ByCountry
+   64  ls 
+   65  cd -
+   66  cd ..
+   67  cd ByCountry
+   68  cd SWC_spring2019/ByCountry
+   69  ls
+   70  cd ..
+   71  cd ByCountry
+   72  cd ..
+   73  pwd
+   74  cd ~
+   75  pwd
+   76  cd -
+   77  cd Afganistan
+   78  cd ~
+   79  cd Destop/
+   80  cd Desktop/
+   81  cd SWC_spring2019/
+   82  cd ByCountry
+   83  cd -
+   84  cd ByCountry
+   85  cd ..
+   86  cd ~
+   87  cd Desktop/SWC_spring2019/ByCountry/
+   88  pwd
+   89  cd -
+   90  cd -
+   91  cd ..
+   92  pwd
+   93  mkdir unix_shell
+   94  ls
+   95  cd unix_shell/
+   96  pwd
+   97  mkdir Japan
+   98  mkdir India
+   99  ls
+  100  touch MyFirstFile.txt
+  101  ls
+  102  cat MyFirstFile.txt 
+  103  subl MyFirstFile.txt 
+  104  cat MyFirstFile.txt 
+  105  subl MyFirstFile.txt 
+  106  cat MyFirstFile.txt 
+  107  mv MyFirstFile.txt MyFirstScript.sh
+  108  ls
+  109  mv MyFirstScript.sh Japan/
+  110  ls
+  111  cd Japan/
+  112  ls
+  113  pwd
+  114  cd ..
+  115  pwd
+  116  cp Japan/MyFirstScript.sh .
+  117  ls
+  118  cd Japan/
+  119  ls
+  120  cd ..
+  121  cd Indian
+  122  cd India/
+  123  cp ../MyFirstScript.sh .
+  124  ls
+  125  rm MyFirstScript.sh 
+  126  ls
+  127  pwd
+  128  cd ..
+  129  rm -r India Japan 
+  130  ls
+  131  mv ByCountry .
+  132  cd ..
+  133  mv ByCountry unix_shell/
+  134  ls
+  135  cd unix_shell/
+  136  ls
+  137  cd ..
+  138  mv Data/ unix_shell/
+  139  rm gapminder.txt 
+  140  ls
+  141  cd unix_shell/
+  142  ls
+  143  cd Data/
+  144  ls
+  145  cd ..
+  146  cd -
+  147  ls
+  148  cd ..
+  149  ls
+  150  cd ..
+  151  cp -r unix_shell/Data/ .
+  152  ls
+  153  cd unix_shell/
+  154  #Manipulating text files
+  155  #Manipulating text files
+  156  #ctrla takes to beg of sentence, ctrle takes to end
+  157  cd Data/
+  158  ls
+  159  cd ByCountry/
+  160  ls 
+  161  #view file is cat
+  162  cat Uruguay.txt 
+  163  head Uruguay.txt 
+  164  #head gives 10 lines by default
+  165  head -n5 Uruguay.txt 
+  166  tail -n10 Uruguay.txt 
+  167  #how big is your file
+  168  wc Uruguay.txt 
+  169  #lines , words, bytes
+  170  wc -l Uruguay.txt 
+  171  wc -w Uruguay.txt 
+  172  wc -b Uruguay.txt 
+  173  #what is the highest life expectancy?
+  174  cat Uruguay.txt 
+  175  ls
+  176  cat Uruguay.txt 
+  177  grep 'Uruguay' Uruguay.txt 
+  178  #only prints lines that have the word Uruguay
+  179  grep -v 'country' Uruguay.txt 
+  180  #use grep to select lines that contain the word "Uruguay"
+  181  #use grep -v to select lines that do not contain 'country" which is in our header
+  182  grep -v 'country' Uruguay.txt >Uruguay_noH.txt
+  183  cat Uruguay_noH.txt 
+  184  #get 4th column for life expextancy
+  185  cut -f4 Uruguay_noH.txt 
+  186  cut -f4 Uruguay_noH.txt >Uruguay_LE.txt
+  187  ls
+  188  cat Uruguay_LE.txt 
+  189  #sort the output numerically and write it to a new file
+  190  sort Uruguay_LE.txt > Uruguay_LE_sorted.txt
+  191  cat Uruguay_LE_sorted.txt 
+  192  tail -n1 Uruguay_LE_sor
+  193  tail -n1 Uruguay_LE_sorted.txt 
+  194  tail -n1 Uruguay_LE_sorted.txt >Uruguat_LE_max.txt
+  195  cat Uruguay_Le_max.txt
+  196  cat Uruguat_Le_max.txt
+  197  mv Uruguat_LE_max.tx Uruguay_LE_max.txt
+  198  cp Uruguat_LE_max.txt Uruguay_LE_max.txt
+  199  rm Uruguat_LE_max.txt 
+  200  cat Uruguay_LE.txt
+  201  sort Uruguay_LE.txt 
+  202  sort -r Uruguay_LE.txt 
+  203  #pipes
+  204  ls 
+  205  #pipes help to use output of one command as an inpuit of the next command
+  206  grep "Uruguay" Uruguay.txt | cut -f4 | sort -n | tail -n1 > Uruguay_LE_max2.txt
+  207  cat Uruguay_LE_max2.txt 
+  208  cd unix_shell
+  209  cd ..
+  210  cd..
+  211  cd..
+  212  cd ..
+  213  cp Data/ByCountry/Sweden.txt .
+  214  cat Sweden.txt 
+  215  grep 'Sweden' Sweden.txt | cut -f3,f4 | sort -n | tail -n1 > Sweden_YearWithMaxLE.txt
+  216  grep 'Sweden' Sweden.txt | cut -f3,4 | sort -n | tail -n1 > Sweden_YearWithMaxLE.txt
+  217  cat Sweden_YearWithMaxLE.txt 
+  218  grep 'Sweden' Sweden.txt | cut -f3,4 | sort -n -k2| tail -n1| cut -f1 > Sweden_YearWithMaxLE.txt
+  219  cat Sweden_YearWithMaxLE.txt 
+  220  grep 'Sweden' Sweden.txt | cut -f3,4 | sort -n | tail -n1 > Sweden_YearWithMaxLE.txt
+  221  cat Sweden_4
+  222  cat Sweden_
+  223  cat Sweden_YearWithMaxLE.txt 
+  224  ls U*
+  225  ls U*.txt
+  226  cd ..
+  227  cd ..
+  228  cd SWC_spring2019/Data/ByCountry/
+  229  ls U*.txt
+  230  #count all lines in all text files that start with G
+  231  wc -l G*.txt
+  232  #Loops
+  233  #variables in bash
+  234  echo Jonathan
+  235  myname=Jonathan
+  236  echo myname
+  237  #call the value of variable
+  238  $myname
+  239  echo $myname
+  240  #general syntax of loops 
+  241  for variable in file1 file2 file 3; do command $variable; done
+  242  #for variable in file1 file2 file 3; do command $variable; done
+  243  for file in Z*.txt Zimbabwe.txt; do echo $file; done; 
+  244  for Jonathan in Zambia.txt Zimbabwe.txt; do echo $Jonathan; done; 
+  245  for file in Z*.txt; do echo $file; done
+  246  for datafile in G*.txt;do ls G*.txt;done
+  247  for datafile in G*.txt;do ls $datafile;done
+  248  #they are different as the first data command finds the first file starting with G, then lists all files that start with g, and reiterates for each file starting with G. The second line simply iterates through the data files starting with G and lists that datafile being viewed
+  249  cd
+  250  notepad .bash_profile
+  251  source ~/.bash_profile
+  252  python
+  253  quit() cd Desktop/SWC_spring2019/unix_shell/Data/ByCountry/
+  254  cd Desktop/SWC_spring2019/unix_shell/Data/ByCountry/
+  255  subl
+  256  ./FirstScript.sh
+  257  cd ..
+  258  cd ..
+  259  ls
+  260  ./FirstScript.sh 
+  261  bash FirstScript.sh 
+  262  ./FirstScript.sh 
+  263  bash FirstScript.sh 
+  264  ls
+  265  cat HighestLE_Mexico.txt 
+  266  #let's make the script better
+  267  ./SecondScript.sh
+  268  cat HighestLE_Mexico.txt 
+  269  #make it even better
+  270  ./ThirdScript.sh Data/ByCountry/Mexico.txt > HighestLe3.txt
+  271  ls
+  272  ./FourthScript.sh Data/ByCountry/Mexico.txt > HighestLe4.txt
+  273  ./FourthScript.sh Data/ByCountry/Mexico.txt > HighestLe4.txt
+  274  ./FourthScript.sh Data/ByCountry/Mexico.txt > HighestLe4.txt
+  275  ./FourthScript.sh Data/ByCountry/Mexico.txt 3 > HighestLe4.txt
+  276  ./FourthScript.sh Data/ByCountry/Mexico.txt 3 > HighestLe4.txt
+  277  ./FourthScript.sh Data/ByCountry/Mexico.txt 3 > HighestLe4.txt
+  278  ls 
+  279  ./FourthScript.sh Data/ByCountry 3 > HighestLe4.txt
+  280  ./FourthScript.sh Data/ByCountry 3 > HighestLe4.txt
+  281  cd Data/
+  282  ls
+  283  cd ByCountry/
+  284  ls
+  285  cut -f1,3,4 France.txt
+  286  cut -f1,3,4 France.txt | sort -n4
+  287  cut -f1,3,4 France.txt | sort -n3
+  288  cut -f1,3,4 France.txt | sort -nk3
+  289  cd ..
+  290  cd ..
+  291  ./FourthScript.sh Data/ByCountry 3 > HighestLe4.txt
+  292  cat HighestLe4.txt 
+  293  ./FourthScript.sh Data/ByCountry 3 > HighestLe4.txt
+  294  cat HighestLe4.txt 
+  295  python
+  296  python --version
+  297  jupyter notebook
+  298  jupyter-notebook
+  299  jupyter notebook
+  300  jupyter
+  301  jupyter notebook
+  302  python
+  303  notepad .bash_profile
+  304  ps
+  305  ps -aux | grep python
+  306  ps -au | grep python
+  307  ps | grep python
+  308  ps | grep python | cut -f1
+  309  python
+  310  history
+  311  history > Linux_Notes.txt
